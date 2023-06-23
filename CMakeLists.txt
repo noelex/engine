@@ -77,6 +77,11 @@ add_library(${LIBRARY_NAME} SHARED
 "shell/platform/linux/fl_view.cc"
 "shell/platform/linux/fl_view_accessible.cc"
 "shell/platform/linux/key_mapping.g.cc"
+
+"shell/platform/common/text_input_model.cc"
+"shell/platform/common/text_editing_delta.cc"
+
+"shell/platform/common/engine_switches.cc"
 )
 
 find_package(PkgConfig REQUIRED)
