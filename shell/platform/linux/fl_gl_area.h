@@ -32,12 +32,11 @@ GtkWidget* fl_gl_area_new(GdkGLContext* context);
 /**
  * fl_gl_area_queue_render:
  * @area: an #FlGLArea.
- * @textures: (transfer none) (element-type FlBackingStoreProvider): a list of
- * #FlBackingStoreProvider.
+ * @texture: queued OpenGL texture.
  *
- * Queues textures to be drawn later.
+ * Queues a texture to be drawn later.
  */
-void fl_gl_area_queue_render(FlGLArea* area, GPtrArray* textures);
+void fl_gl_area_queue_render(FlGLArea* area, FlBackingStoreProvider* texture);
 
 G_END_DECLS
 
